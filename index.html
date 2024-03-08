@@ -3,15 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Index Page</title>
+        <title>Homepage</title>
         <!--
 
         -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="ShaneCSS" href="css/ShaneStyle.css/">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-rbs5rBoPZI+LiKNo2Qyv5i1D5OxkSTFkL4vMqVdPD9B80HLaQzZdFkscMz9O3gfs" crossorigin="anonymous"></script>
+            
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
 
     </head>
@@ -20,7 +22,7 @@
 
         
         <!--Navbar -->
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse" style="margin-bottom: 0%;">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <div class="row ">
@@ -33,15 +35,23 @@
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Job Hunter</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Event <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Jom Masuk Kampung</a></li>
-                            <li><a href="#">Committee Service</a></li>
-                            <li><a href="#">Entreprenuership</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Forumn</a></li>
+                    <li class="#"><a href="#">Learning</a></li>
+                    <li class="#"><a href="#">Forumn</a></li>
+                    <li class="#"><a href="#">Learning</a></li>
+                    <!--
+                        class="active"-hover la mcm klau ditekan
+                    -->
+
+                    <!--Dropdown
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Event <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Jom Masuk Kampung</a></li>
+                                <li><a href="#">Committee Service</a></li>
+                                <li><a href="#">Entreprenuership</a></li>
+                            </ul>
+                        </li>
+                    -->
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -49,8 +59,29 @@
                 </ul>
             </div>
         </nav>
-            
         <!--Nav Bar Tamat-->
+        <!--Search Bar Part-->
+        <div class="container-fluid" style="background-color: rosybrown;">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <div class="input-group">
+                        <input class="form-control border-end0 border rounded-pill" type="search" value="search" id="HomepageSearch">
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="SearchBtn">
+                                <i class="fa fa-search"></i>
+                            </button>
+
+                        </span>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--Done Search Bar Part-->  
 
         <!--Lets Try Carousel-->
 
@@ -67,3 +98,5 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
+
+
