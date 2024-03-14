@@ -7,7 +7,7 @@
         <!--
 
         -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="ShaneCSS" href="css/output.css/">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
@@ -22,75 +22,107 @@
 
         
         <!--Navbar -->
-        <nav class="navbar navbar-inverse" style="margin-bottom: 0%;">
-            <div class="container-fluid">
-                <div class="nav navbar-nav">
-                    <div class="row" style="background-color: black;text-align: center;">
-                        <div class="col-xs-4 navbar-brand">
-                            <img src="Img\YP_NoBG.png" width="45" height="25" alt="Icon" >
-                        </div>
-                        <div class="col-xs navbar-brand">
-                            YouthPower
-                        </div>
-                    </div>
+        
+        <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #222222;" data-bs-theme="dark">
+            <div class="container-fluid ">
+                <img src="Img/YP_NoBG.png" width="42" height="25" alt="Logo">
+                <a class="navbar-brand text-white fw-bolder" style="padding-left:2px; padding-right: 4px;" href="#">YouthPower</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-0 " id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white" aria-current="page" href="training.html">Training</a>
+                        </li>
+                        <li class="nav-item p-1 ">
+                            <a class="nav-link text-white" href="event.html">Event</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white" href="forumn.html">Forumn</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="nav navbar-nav" style="padding-left:2% ;">
-                    <li class="#"><a href="training.html">Training</a></li>
-                    <li class="#"><a href="event.html">Event</a></li>
-                    <li class="#"><a href="forumn.html">Forumn</a></li>
-                    <!--
-                        class="active"-hover la mcm klau ditekan
-                    -->
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
+                <div class="content-end" id="navbarNav">
+                    <ul class="nav ">
+                        <li class="nav-item m-1"><button type="button" class="p-1 rounded-pill bg-none border border-white "><i class="fa fa-sign-in" aria-hidden="true"></i>
+                            LogIn</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <!--Nav Bar Tamat----------------   -->
-
         
-        <!--Search Bar Part
-            <div class="container-fluid" style="background-color: rosybrown;">
-                <div class="row " style="padding-top: 0.5%; padding-bottom: 0.5%;">
-                <div class="col-lg-12 mx-auto ">
-                    <div class="input-group col-lg-8 " style="text-align: right ; border: 50px; border-color: black;">
-                        <input class="form-control border-end-0 border rounded-pill " type="search" value="search" id="HomepageSearch">
-                        <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill " type="button">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
+        <!--Nav Bar Tamat------------------>
+        
+        <!-- Contain-->
+        <div class="flex row ">
+            <div class="container-fluid ">
+                <form action="" class="d-flex m-4 ">
+                    <img src="Img/YP_BlackFont_No BG.png" width="42" height="45" alt="Logo">
+                    <input type="search" class="form-control me-1 rounded-5" placeholder="Search" aria-label="Search" style="width: 90%;">
+                    <button class=" bg-white rounded-5 "><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="flex row">
+            <div class="container-fluid "></div><!--Kiri-->
+            <div class="col-2 sticky">
+                <div class="row">
+                    <h4 class=" text-center fw-bold m-4" style="">Category</h4>
+                    <button class="cbtn content-center m-4 rounded-pill bg-none">All</button>
+                    <button class="content-center m-4 rounded-pill bg-none">Best Event</button>
+                    <button class="content-center m-4 rounded-pill bg-none">Financial</button>
+                    <button class="content-center m-4 rounded-pill bg-none">Technology</button>
+                    <form action="" class="d-flex m-4 ">
+                        <input type="search" class="form-control me-1 rounded-5" placeholder="Search" aria-label="Search" >
+                        <button class=" bg-white rounded-5 "><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div style="text-align: center;">
-                <input class="col-lg-5 mx-auto" name="Search" id="Search" type="search" placeholder="Are you looking something?">
-                <a>Lorem ipsum dolor sit amet</a>
-            </div>
 
-        </div>
-    -->
-    
-    <!--Done Search Bar Part-->  
-    
-        <div class="container m-5">
-            <div class="row">
-                <!--Side Navbar-->
-                <div class="col-span-4" ><button class="bg-slate-600 w-7 h-8 border-t-2">Hello</button></div>
-                <!--The Contain-->
-                <div class="col-span-7">World</div>
+
+
+            <div class="col bg-blue-900"><!--Kanan-->
+                <section class="p-4 text-center w-80 max-h-11">
+                    <div class="container bg-slate-600" >
+                        <div class="justify-center bg-blue-400 " >
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                    class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJhaW5pbmclMjBidXNpbmVzc3xlbnwwfDB8MHx8fDI%3D" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-                
         </div>
-       
         
-        <h1>This is my Website</h1>
+        
+        
         <!--Script List-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
-</html>
+    </html>
 
 
