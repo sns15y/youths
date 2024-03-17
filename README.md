@@ -23,3 +23,11 @@ Career Pathways
 
 Community Building
 =Mentorship, Committee service - Volunteering
+
+System: Integrated Learning Hub and Community Engagement Platform
+
+Feature1: Educational Platform+ WebBinar [Shane]
+Feature2: Training [Firdaus]
+Feature3: Community Service [Zatul]
+Feature4: Forumn [Aisyah]
+
