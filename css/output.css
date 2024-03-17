@@ -2480,3 +2480,14 @@ video {
     }
   }
 }
+
+
+.cbtn{
+  background-color: white;
+  border: 0px;
+transition-duration: 0.8s;
+}
+
+.cbtn:hover{
+background-image: linear-gradient(to right,#367DBE,#A6D0F6);
+}

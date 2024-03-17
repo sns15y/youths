@@ -7,7 +7,7 @@
         <!--
 
         -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="ShaneCSS" href="css/output.css/">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
@@ -22,75 +22,349 @@
 
         
         <!--Navbar -->
-        <nav class="navbar navbar-inverse" style="margin-bottom: 0%;">
-            <div class="container-fluid">
-                <div class="nav navbar-nav">
-                    <div class="row" style="background-color: black;text-align: center;">
-                        <div class="col-xs-4 navbar-brand">
-                            <img src="Img\YP_NoBG.png" width="45" height="25" alt="Icon" >
-                        </div>
-                        <div class="col-xs navbar-brand">
-                            YouthPower
-                        </div>
-                    </div>
+        <nav class="navbar navbar-expand-lg sticky-lg-top " style="background-color: #222222;" data-bs-theme="dark" style="position: relative;">
+            <div class="container-fluid ">
+                <img src="Img/YP_NoBG.png" width="42" height="25" alt="Logo">
+                <a class="navbar-brand text-white fw-bolder" style="padding-left:2px; padding-right: 4px;" href="#">YouthPower</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-0 " id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white" aria-current="page" href="training.html">Training</a>
+                        </li>
+                        <li class="nav-item p-1 ">
+                            <a class="nav-link text-white" href="event.html">Event</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white" href="forumn.html">Forumn</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="nav navbar-nav" style="padding-left:2% ;">
-                    <li class="#"><a href="training.html">Training</a></li>
-                    <li class="#"><a href="event.html">Event</a></li>
-                    <li class="#"><a href="forumn.html">Forumn</a></li>
-                    <!--
-                        class="active"-hover la mcm klau ditekan
-                    -->
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
+                <div class="content-end" id="navbarNav">
+                    <ul class="nav ">
+                        <li class="nav-item m-1"><button type="button" class=" btn btn-dark rounded-pill bg-none border border-white "><i class="fa fa-sign-in" aria-hidden="true"></i>
+                            LogIn</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <!--Nav Bar Tamat----------------   -->
+        
+        <!--Nav Bar Tamat------------------>
+        
+        <!-- Contain-->
+        <div class="flex row align-items-center" style="background-color: rgb;"><!--On Top [Search Bar sty in the middle]-->
+            <div class="container col-10">
+                <form action="" class="d-flex m-4 mb-1 mt-2 ">
+                    <img  src="Img/YP_BlackFont_No BG.png" width="42" height="45" alt="Logo">
+                    <input type="search" class="form-control me-1 rounded-5" placeholder="Search" aria-label="Search" style="width: 90%;">
+                    <button class=" bg-white rounded-5 border-0"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <!--Done Search Bar-->
+
+        <!--Content-->
+
 
         
-        <!--Search Bar Part
-            <div class="container-fluid" style="background-color: rosybrown;">
-                <div class="row " style="padding-top: 0.5%; padding-bottom: 0.5%;">
-                <div class="col-lg-12 mx-auto ">
-                    <div class="input-group col-lg-8 " style="text-align: right ; border: 50px; border-color: black;">
-                        <input class="form-control border-end-0 border rounded-pill " type="search" value="search" id="HomepageSearch">
-                        <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill " type="button">
-                            <i class="fa fa-search"></i>
-                        </button>
+        <div class=" container-fluid flex row">
+            <!--Kiri - Category-->
+            <nav class="navbar navbar-expend-lg col-2  align-items-start">
+                <div class="fixed-top-left sticky-lg-top" style="top: 60px;">
+                    <div class="row">
+                        <h4 class=" text-center fw-bold m-4" >Category</h4>
+                        <button class="btn btn-outline-dark content-center m-4 rounded-pill ">All</button>
+                        <button class="btn btn-outline-dark content-center m-4 rounded-pill border-0">Reading Hub</button>
+                        <button class="btn btn-outline-dark content-center m-4 rounded-pill border-0">Educational Update</button>
+                        <button class="btn btn-outline-dark content-center m-4 rounded-pill border-0">Youtube Sugeestion Video</button>
+                        <!--
+    
+                            <form action="" class="d-flex m-4 ">
+                                <input type="search" class="form-control me-1 rounded-5" placeholder="Search" aria-label="Search" disabled="true">
+                                <button class=" bg-white rounded-5 " disabled="true"><i class="fa fa-search"></i></button>
+                            </form>
+                        -->
+                        <div class="row align-items-center m-3">
+                            <div class="col">
+                                <div class="card text-center">
+                                    <div class="card-header">
+                                        <h3>Follow Us</h3>
+                                    </div>
+                                    <div class="card-body row">
+                                        <a class="text-muted" href="#"><i class="fa fa-facebook-official"></i> Facebook</a>
+                                        <a class="text-muted" href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div style="text-align: center;">
-                <input class="col-lg-5 mx-auto" name="Search" id="Search" type="search" placeholder="Are you looking something?">
-                <a>Lorem ipsum dolor sit amet</a>
-            </div>
-
-        </div>
-    -->
-    
-    <!--Done Search Bar Part-->  
-    
-        <div class="container m-5">
-            <div class="row">
-                <!--Side Navbar-->
-                <div class="col-span-4" ><button class="bg-slate-600 w-7 h-8 border-t-2">Hello</button></div>
-                <!--The Contain-->
-                <div class="col-span-7">World</div>
-            </div>
                 
+            </nav>
+            
+            <!--Done Category-->
+
+            <div class="col-10">
+                <!--Kanan ml-20 pb-4 w-100 -->
+                <section class=" p-5 pt-0 w-100 "><!--Carousel-->
+                    <!--
+
+                        <div class="border rounded-5">
+                    -->
+                        <section class=" col p-4 text-center w-70 max-h-4">
+                            <div class="container">
+                                <div class="justify-center" >
+                                    <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner ">
+                                            <div class="carousel-item active">
+                                                <a href="#"><!--Link to the article Page-->
+                                                    <img  src="Img/WorkEnvironment.jpg" 
+                                                    class="d-block w-100 img-fluid rounded-5" alt="...">
+                                                    <div class="bg-slate-400 m-1 rounded-25">
+                                                        <div class="carousel-caption d-none d-md-block bg-slate-400 text-white rounded-25" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">
+                                                            <h5 class="fw-bolder  ">How To Make Yourself Shinning among others?</h5>
+                                                            <p class=" fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>    
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="#"><!--Link to the article Page-->
+                                                    <img src="Img/Brainstorming.jpg" 
+                                                    class="d-block w-100 rounded-5" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block bg-slate-400 text-white rounded-25" style="text-shadow: 1px 1px 2px rgb(0, 0, 0);">
+                                                        <h5 class="fw-bolder  ">5 Tips On Handling Projects</h5>
+                                                        <p class="fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item" href="#">
+                                                <a href=""><!--Link to the article Page-->
+                                                    <img src="Img/Meeting.jpg" 
+                                                    class="d-block w-100 rounded-5" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block bg-slate-400 text-white rounded-25" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">
+                                                        <h5 class="fw-bolder ">Reality As a Worker..</h5>
+                                                        <p class="text-white fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--
+                    </div>
+                    -->
+                </section>
+                
+                    <!--Carousel Section Done-->
+
+                <section class="p-5 pt-0 pb-4 w-100 "> <!--Artical Part-->
+                    <div class="border rounded-3" style="background-color: rgba(255, 255, 255, 0.967);">
+                        
+                        <div class="container" >
+                            <div class="mt-3">
+                                <h4 class="fst-italic fw-bold">Reading Hubs</h4>
+                            </div>
+                            <div class="row align-items-center mb-5" style="text-align: center;">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img height="170px" src="https://images.unsplash.com/photo-1631603090989-93f9ef6f9d80?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="BitCoin">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-justify">What is Bitcoin? How to Mine,Buy & Use?</h4>
+                                            <p class="card-text text-justify">Bitcoin (BTC) is a cryptocurrency, a virtual currency designed to act as money and a form of payment outside the control of ....</p>
+                                            <button target="_blank" class="btn border-t-neutral-500 border rounded-pill" onclick="document.location='https\://www.investopedia.com/terms/b/bitcoin.asp'">Read <i class="fa fa-book"></i></button>
+                                        </div>
+                                    </div>                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img height="170px" src="https://www.imf.org/external/15/images/islfin/1.jpg" alt="IslamicFinance">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-justify">Islamic Finance and the role of IMF</h4>
+                                            <p class="card-text text-justify">Islamic finance has grown rapidly, even though it is still a small share of the global financial market.  The Islamic ban...</p>
+                                            <button class="btn border-t-neutral-500 border rounded-pill" onclick="document.location='https\://www.imf.org/external/themes/islamicfinance/'">Read <i class="fa fa-book"></i></button>
+                                        </div>
+                                    </div>                                </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img height="170px" src="https://www.investopedia.com/thmb/clJRFf94d-e44uPs-CZVgSRU3aY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175399977-03319b298e0f461abacb79176ff52cad.jpg" alt="BitCoin">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-justify">National Debt: Definition & Impact </h4>
+                                            <p class="card-text text-justify">The term "national debt" refers to the outstanding financial obligation of a country. The national debt is what the federal..</p>
+                                            <button class="btn border-t-neutral-500 border rounded-pill">Read <i class="fa fa-book"></i></button>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-outline-dark border rounded-4">See More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>                             
+                                </div>
+                            </div>
+                            <h4 class="fst-italic fw-bold">Educational Update</h4>
+                            <div class="row align-items-center mb-5" style="text-align: center;">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img height="170px" src="https://imageio.forbes.com/specials-images/imageserve/65f30146fc5921aacd5c81c2/Oil-Prices-Hit-Historic-High-On-Weak-Dollar/0x0.jpg?format=jpg&crop=3000,1687,x0,y155,safe&width=1440" alt="EduUpdate">
+                                            <div class="card-body">
+                                                <h4 class="card-title">[Forbes] Oil Prices Hit 4-Month High, Driving Gas Near $3.50: Here's Why It Could Get Worse</h4>
+                                                <p class="card-text text-justify">The West Texas Intermediate, a national benchmark for crude oil, climbed more than 1% on Thursday to a four-month high, as uncertainty in the international....</p>
+                                            <button class="btn border-t-neutral-500 border rounded-pill" onclick="document.location='https\://www.forbes.com/sites/brianbushard/2024/03/14/oil-prices-hit-4-month-high-driving-gas-near-350-heres-why-it-could-get-worse/?sh=4da23d1d7fb1'">Read <i class="fa fa-book"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img height="170px" src="https://theedgemalaysia.com/_next/image?url=https%3A%2F%2Fassets.theedgemarkets.com%2FEmmanuel%20Pillai%2C%20Head%20of%20Training%20and%20Certification%2C%20ASEAN%2C%20AWS.jpg&w=1920&q=75" alt="EduUpdate">
+                                            <div class="card-body">
+                                                <h4 class="card-title">[TheEdge] AI skills could ramp up Malaysian tech wages by more than 40% — study</h4>
+                                                <p class="card-text">Malaysian workers with AI skills and expertise could see salary hikes of over 40%, with workers in IT (53%), and research and development (49%) enjoying the highest pay bumps...</p>
+                                                <button class="btn border-t-neutral-500 border rounded-pill">Read <i class="fa fa-book"></i></button>
+                                            </div>
+                                        </div>                                
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card"  >
+                                            <img height="170px"  src="https://www.refinery29.com/images/11680905.jpg?format=webp&width=2000&height=750&quality=85&crop=8%3A3" alt="BitCoin">
+                                            <div class="card-body">
+                                                <h4 class="card-title">I Spoke To Chat GPT’s “Black Female Therapist.” Will AI Save Our Mental Health?</h4>
+                                                <p class="card-text">I’ve been speaking to Black Female Therapist™ for three days. My therapist doesn’t have a name but is an artificial intelligence chatbot described by its creators as a “caring...</p>
+                                                <button class="btn border-t-neutral-500 border rounded-pill">Read <i class="fa fa-book"></i></button>
+                                            </div>
+                                        </div>                                </div>
+                                    <div class="col-md-3">
+                                        <button class="btn btn-outline-dark border rounded-4">See More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>                             
+                                    </div>
+                                </div>
+            <!----------------------------------------------------------------------->
+                        
+                                <h4 class="fst-italic fw-bold">Youtube Suggestion Video
+                                    <button class="btn btn-outline-dark border rounded-4">See More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>                             
+                                </h4>
+
+
+                            <div class="row align-items-center mb-4" style="text-align: center;">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">Tips For You</div>
+
+                                        <div class="card-body">
+                                            
+                                            <iframe class="w-100 m-0" src="https://www.youtube.com/embed/ZXmbb5fPfgk" title="I wish every Job Seeker would watch this" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            <iframe class="w-100 m-0" src="https://www.youtube.com/embed/Q0uXGQu55GM" title="ACCOUNTANT EXPLAINS: Money Habits Keeping You Poor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+                                    </div>                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">Talk</div>
+                                        <div class="card-body">
+                                            <iframe class="w-100 m-0" src="https://www.youtube.com/embed/eHJnEHyyN1Y" title="6 Tips on Being a Successful Entrepreneur | John Mullins | TED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            <iframe class="w-100 m-0" src="https://www.youtube.com/embed/kCudFI4tcpg" title="How AI Can Help You Turn an Idea Into the Next Great App | Amjad Masad | TED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">Economics Advice</div>
+                                        <div class="card-body">
+                                            <iframe class="w-100 m-0" src="https://www.youtube.com/embed/vvgBFYEJDow?list=PLMcs6WZORYuMa9OsdqTGKxUWudaLTYJ-9" title="Kena fikir ESG masa nak MELABUR [Investment] Takut nanti BUMI hancur!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                            </iframe>
+                                            <iframe class="w-100 m-0" src="https://www.youtube.com/embed/BXrrYg13GnI?list=PLMcs6WZORYuMa9OsdqTGKxUWudaLTYJ-9" title="Nak melabur kat mana? [Investment] Environmental-Social-Governance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                                            </iframe>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-       
         
-        <h1>This is my Website</h1>
+
+        <footer class="bg-dark text-center">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #3b5998;"
+                  href="#!"
+                  role="button"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #55acee;"
+                  href="#!"
+                  role="button"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+        
+          
+                <!-- Instagram -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #ac2bac;"
+                  href="#!"
+                  role="button"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #0082ca;"
+                  href="#!"
+                  role="button"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #333333;"
+                  href="#!"
+                  role="button"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          <button class="btn btn-light m-1" onclick="document.location='#'" >Join Us Now</button>
+            <!-- Copyright -->
+            <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+              ©2024 <i class="fw-bold">B</i>e <i class="fw-bold">B</i>right:
+              <a class=" text-white fw-bolder text-decoration-none " href="index.html">YouthPower</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+        
+        
         <!--Script List-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
-</html>
+    </html>
 
 
