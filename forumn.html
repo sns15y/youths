@@ -1,69 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Forumn</title>
-        <!--
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/output.css/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Custom CSS for forum post boxes */
+        .forum-post-box {
+            background-color: #f2f2f2; /* Light gray background color */
+            padding: 15px; /* Add some padding */
+            margin-bottom: 15px; /* Add some margin between boxes */
+        }
+        .forum-post-box .panel-title {
+            font-weight: bold; /* Make the title bold */
+        }
+        .reply-btn {
+            margin-top: 10px; /* Adjust margin to separate from other content */
+        }
+        .reply-form {
+            display: none; /* Hide the form by default */
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar -->
+    <nav class="navbar navbar-inverse" style="margin-bottom: 0%;">
+        <div class="container-fluid">
+            <div class="nav navbar-nav">
+                <div class="row" style="text-align: center;" href="index.html">
+                    <div class="col-xs-4 navbar-brand">
+                        <img src="Img\YP_NoBG.png" width="45" height="25" alt="Icon">
+                    </div>
+                    <div class="col-xs navbar-brand">
+                        <a href="index.html" class="text-white">YouthPower</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav navbar-nav" style="padding-left:2%;">
+                <li class="#"><a href="training.html">Training</a></li>
+                <li class="#"><a href="event.html">Event</a></li>
+                <li class="active"><a href="forum.html">Forum</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Nav Bar End -->
 
-        -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="ShaneCSS" href="css/output.css/">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-rbs5rBoPZI+LiKNo2Qyv5i1D5OxkSTFkL4vMqVdPD9B80HLaQzZdFkscMz9O3gfs" crossorigin="anonymous"></script>
-            
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    </head>
-
-    <body>
-
-        
-        <!--Navbar -->
-        <nav class="navbar navbar-inverse" style="margin-bottom: 0%;">
-            <div class="container-fluid">
-                <div class="nav navbar-nav">
-                    <div class="row" style="text-align: center;" href="index.html">
-                        <div class="col-xs-4 navbar-brand">
-                            <img src="Img\YP_NoBG.png" width="45" height="25" alt="Icon" >
+    <div class="container">
+        <h2>Welcome to the Youth Power Forum</h2>
+        <p class>Feel free to ask any questions here. We will try to help you!</p>
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Forum Post Form -->
+                <form id="forum-post-form">
+                    <div class="form-group">
+                        <label for="post-title">Title:</label>
+                        <input type="text" class="form-control" id="post-title" name="post-title">
+                    </div>
+                    <div class="form-group">
+                        <label for="post-content">Content:</label>
+                        <textarea class="form-control" id="post-content" name="post-content" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </form>
+                <hr>
+                <!-- Forum Posts -->
+                <div id="forum-posts">
+                    <!-- Sample Forum Post -->
+                    <div class="panel panel-default forum-post-box">
+                        <div class="panel-body">
+                            <h5 class="panel-title">How to learn programming?</h5>
+                            <p class="card-text">I'm new to programming and want to learn. Can anyone suggest some good resources?</p>
+                            <p class="card-text"><small class="text-muted">Posted by Shane Nickveen - 3 hours ago</small></p>
+                            <button class="btn btn-info reply-btn">Reply</button>
+                            <!-- Reply Form -->
+                            <form class="reply-form">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
                         </div>
-                        <div class="col-xs navbar-brand">
-                            <a href="index.html" class="text-white">YouthPower</a>
+                    </div>
+                    <!-- Another Sample Forum Post -->
+                    <div class="panel panel-default forum-post-box">
+                        <div class="panel-body">
+                            <h5 class="panel-title">Discussion on What Is The Highest Paying Job?</h5>
+                            <p class="card-text">Let's discuss the highest paying job and its pros and cons.</p>
+                            <p class="card-text"><small class="text-muted">Posted by Izzatul - 1 day ago</small></p>
+                            <button class="btn btn-info reply-btn">Reply</button>
+                            <!-- Reply Form -->
+                            <form class="reply-form">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Add more hardcoded posts as needed -->
+                    <div class="panel panel-default forum-post-box">
+                        <div class="panel-body">
+                            <h5 class="panel-title">Best job for introverts.</h5>
+                            <p class="card-text">I'm an introvert and I am curious on which job suits me. Can anyone suggest it to me? Thanks!</p>
+                            <p class="card-text"><small class="text-muted">Posted by Idayu - 1 day ago</small></p>
+                            <button class="btn btn-info reply-btn">Reply</button>
+                            <!-- Reply Form -->
+                            <form class="reply-form">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <ul class="nav navbar-nav" style="padding-left:2% ;">
-                    <li class="#"><a href="training.html">Training</a></li>
-                    <li class="#"><a href="event.html">Event</a></li>
-                    <li class="active"><a href="forumn.html">Forumn</a></li>
-                    <!--
-                        class="active"-hover la mcm klau ditekan
-                    -->
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
             </div>
-        </nav>
-        <!--Nav Bar Tamat----------------   -->
+            <div class="col-md-4">
+                <!-- Sidebar or additional content can be added here -->
+            </div>
+        </div>
+    </div>
 
-
-
-        <!-- Sambung code kmu bwh ni-->
-
-
-
-
-
-
-
-        <!--Script List-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        // jQuery to toggle reply form visibility
+        $(document).ready(function(){
+            $('.reply-btn').click(function(){
+                $(this).siblings('.reply-form').toggle();
+            });
+        });
+    </script>
+</body>
 </html>
-
-
