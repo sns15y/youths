@@ -1,72 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Training</title>
-        <!--
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="ShaneCSS" href="css/output.css/">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-rbs5rBoPZI+LiKNo2Qyv5i1D5OxkSTFkL4vMqVdPD9B80HLaQzZdFkscMz9O3gfs" crossorigin="anonymous"></script>
-            
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/FirdausStyle.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="ShaneCSS" href="css/output.css/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    </head>
+    <title>Training</title>
+</head>
+
 
     <body>
-
-        
-        <!--Navbar -->
-        <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #222222;" data-bs-theme="dark">
-            <div class="container-fluid ">
-                <img src="Img/YP_NoBG.png" width="42" height="25" alt="Logo">
-                <a class="navbar-brand text-white" style="padding-left:2px; padding-right: 4px;" href="index.html">YouthPower</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse p-0 " id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item p-1">
-                            <a class="nav-link text-white fw-bolder" aria-current="page" href="training.html">Training</a>
-                        </li>
-                        <li class="nav-item p-1 ">
-                            <a class="nav-link text-white" href="event.html">Event</a>
-                        </li>
-                        <li class="nav-item p-1">
-                            <a class="nav-link text-white" href="forumn.html">Forumn</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="content-end" id="navbarNav">
-                    <ul class="nav ">
-                        <li class="nav-item m-1"><button type="button" class="p-1 rounded-pill bg-none border border-white "><i class="fa fa-sign-in" aria-hidden="true"></i>
-                            LogIn</button>
-                        </li>
-                    </ul>
-                </div>
+  
+      <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #222222;" data-bs-theme="dark">
+        <div class="container-fluid ">
+            <img src="Img/YP_NoBG.png" width="42" height="25" alt="Logo">
+            <a class="navbar-brand text-white" style="padding-left:2px; padding-right: 4px;" href="index.html">YouthPower</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-0 " id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item p-1">
+                        <a class="nav-link text-white fw-bolder" aria-current="page" href="training.html">Training</a>
+                    </li>
+                    <li class="nav-item p-1 ">
+                        <a class="nav-link text-white" href="event.html">Event</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="nav-link text-white" href="forumn.html">Forum</a>
+                    </li>
+                </ul>
             </div>
+            <div class="content-end" id="navbarNav">
+                <ul class="nav ">
+                    <li class="nav-item m-1"><button type="button" class="p-1 rounded-pill bg-none border border-white "><i class="fa fa-sign-in" aria-hidden="true"></i>
+                        LogIn</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img src="img/Marketing.jpeg" class="d-block w-100 c-img" alt="...">
+              <div class="carousel-caption top-0 mt-4 ">
+                <p class="mt-5 fs-3 text-uppercase">Master the marketing business</p>
+                <h1 class="display-1 fw-bolder text-capitalize">Marketing Skills</h1>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Enter Training</button>
+              </div>
+              
+            </div>
+            <div class="carousel-item c-item">
+              <img src="img/Engineering.jpeg" class="d-block w-100 c-img" alt="...">
+              <div class="carousel-caption top-0 mt-4 ">
+                <p class="mt-5 fs-3 text-uppercase">Create life-changing contraptions</p>
+                <h1 class="display-1 fw-bolder text-capitalize">Engineering Skills</h1>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Enter Training</button>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img src="img/IoT.jpeg" class="d-block w-100 c-img" alt="...">
+              <div class="carousel-caption top-0 mt-4 ">
+                <p class="mt-5 fs-3 text-uppercase">Delve into the world of IT</p>
+                <h1 class="display-1 fw-bolder text-capitalize">Coding Skills</h1>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Enter Training</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  
+        <h1 class="text-center mt-5">Choose between one of our many training courses</h1>
+        <h1 class="display-1 fw-bolder text-capitalize text-center mt-5">Coding Skills</h1>
+        <div class="container">
+          <div class="row gc-3">
+            <div class="col-4">
+              <div class="card top-0 mt-4" style="width: 18rem;">
+                <img src="img/IoT.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Problem Solving</h5>
+                  <p class="card-text"> Learn in breaking down complex problems into manageable components and devise effective solutions using logical thinking and creativity.</p>
+                  <a href="#"><button class="buttons">
+                    <span>Join training</span>
+                </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card top-0 mt-4" style="width: 18rem;">
+                <img src="img/IoT.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Debugging</h5>
+                  <p class="card-text">Be proficient in identifying, isolating, and resolving errors or bugs in code efficiently, utilizing systematic methods and debugging tools.</p>
+                  <a href="#"><button class="buttons">
+                    <span>Join training</span>
+                </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card top-0 mt-4" style="width: 18rem;">
+                <img src="img/IoT.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Algorithmic thinking</h5>
+                  <p class="card-text">Master the skill to formulate clear and efficient algorithms to solve computational problems, considering factors like time complexity and space complexity.</p>
+                  <a href="#"><button class="buttons">
+                    <span>Join training</span>
+                </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <h1 class="display-1 fw-bolder text-capitalize text-center mt-5">Engineering Skills</h1>
+          <div class="container">
+            <div class="row gc-3">
+              <div class="col-4">
+                <div class="card top-0 mt-4" style="width: 18rem;">
+                  <img src="img/Engineering.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Systems Thinking</h5>
+                    <p class="card-text">Learn how to understand and analyze complex systems comprehensively, while considering interactions between various components and their impact on overall performance and functionality.</p>
+                    <a href="#"><button class="buttons">
+                      <span>Join training</span>
+                  </button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card top-0 mt-4" style="width: 18rem;">
+                  <img src="img/Engineering.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Prototyping and Iteration</h5>
+                    <p class="card-text"> Learn in how to develop prototypes and iteratively refining designs based on feedback and testing to achieve optimal solutions.</p>
+                    <a href="#"><button class="buttons">
+                      <span>Join training</span>
+                  </button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card top-0 mt-4" style="width: 18rem;">
+                  <img src="img/Engineering.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Risk Management</h5>
+                    <p class="card-text">The ability to identify potential risks in engineering projects, assess their potential impact, and develop strategies to mitigate or manage them effectively throughout the project lifecycle..</p>
+                    <a href="#"><button class="buttons">
+                      <span>Join training</span>
+                  </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <h1 class="display-1 fw-bolder text-capitalize text-center mt-5">Marketing Skills</h1>
+            <div class="container">
+              <div class="row gc-3">
+                <div class="col-4">
+                  <div class="card top-0 mt-4" style="width: 18rem;">
+                    <img src="img/Marketing.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Market Research</h5>
+                      <p class="card-text">Learn the ways in gathering and analyzing data about target markets, competitors, and consumer behavior to inform strategic decision-making and campaign planning.</p>
+                      <a href="#"><button class="buttons">
+                        <span>Join training</span>
+                    </button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card top-0 mt-4" style="width: 18rem;">
+                    <img src="img/Marketing.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Content Creation</h5>
+                      <p class="card-text">Be proficient in creating engaging and relevant content across various channels, including written, visual, and multimedia formats, to attract and retain audiences.</p>
+                      <a href="#"><button class="buttons">
+                        <span>Join training</span>
+                    </button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card top-0 mt-4" style="width: 18rem;">
+                    <img src="img/Marketing.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Analytics and Metrics</h5>
+                      <p class="card-text">Master the skill in measuring and interpreting key performance indicators (KPIs) and marketing metrics, such as conversion rates, engagement levels, and ROI, to evaluate the effectiveness of marketing strategies and campaigns.</p>
+                      <a href="#"><button class="buttons">
+                        <span>Join training</span>
+                    </button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+  
+        <nav aria-label="Page navigation example" style="width: 200px; margin: 0 auto;"> <ul class="pagination mx-auto mt-5">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
         </nav>
-        <!--Nav Bar Tamat----------------   -->
-
-
-
-        <!-- Sambung code kmu bwh ni-->
-
-
-
-
-
-
-
-        <!--Script List-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  
+  </body>
 </html>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
