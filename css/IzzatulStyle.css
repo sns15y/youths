@@ -42,7 +42,7 @@ body {
             border-color: #b4b0b0;
         }
 
-        div.workshopword {
+        .workshopword {
             font-family: Georgia, serif;
             font-size: 5rem;
             font-style: italic;
@@ -56,21 +56,21 @@ body {
             text-transform: uppercase;
         }
 
-        div.gallery {
+        .gallery {
              margin: 20px;
              border: 1px solid #ccc;
              float: left;
              width: 230px;
              height: 490px;
             }
-        div.gallery:hover {
+        .gallery:hover {
                 border: 1px solid #777;
             }
-        div.gallery img {
+        .gallery img {
                 width: 100%;
                 height: auto;
             }
-        div.desc {
+        .desc {
                 padding: 5px;
                 text-align: center;
                 font: auto;
