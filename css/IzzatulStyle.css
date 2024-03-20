@@ -63,12 +63,19 @@
              width: 230px;
              height: 490px;
             }
+<<<<<<< HEAD
         gallery:hover {
             border: 1px solid #777;
         }
 
 
         gallery img {
+=======
+        .gallery:hover {
+                border: 1px solid #777;
+            }
+        .gallery img {
+>>>>>>> 64bf5f288461d38c1c68f3f566cc853be9bfe568
                 width: 100%;
                 height: auto;
             }
