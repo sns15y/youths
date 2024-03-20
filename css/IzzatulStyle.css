@@ -1,15 +1,15 @@
-body {
+.body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        nav ul {
+        .nav ul {
             list-style-type: none;
             display: flex;
         }
  
-        nav a {
+        .nav a {
             text-decoration: none;
             color: #fff;
             margin: 0 15px;
