@@ -1,0 +1,77 @@
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+ 
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+
+        .workshop {
+            text-align: center;
+            font-size: larger;
+            width: 1238px;
+            height: 2300px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 30px;
+            padding-right: 50px;
+            padding-bottom: 200px;
+            padding-left: 80px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #b4b0b0;
+        }
+
+        div.workshopword {
+            font-family: Georgia, serif;
+            font-size: 5rem;
+            font-style: italic;
+            font-weight: bolder;
+            text-size-adjust: 200%;
+            letter-spacing: 0.6px;
+            word-spacing: -1.2px;
+            color: #000000;
+            text-decoration: none solid rgb(68, 68, 68);
+          
+            text-transform: uppercase;
+        }
+
+        div.gallery {
+             margin: 20px;
+             border: 1px solid #ccc;
+             float: left;
+             width: 230px;
+             height: 490px;
+            }
+        div.gallery:hover {
+                border: 1px solid #777;
+            }
+        div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+        div.desc {
+                padding: 5px;
+                text-align: center;
+                font: auto;
+            }
