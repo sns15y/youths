@@ -63,7 +63,7 @@
              width: 230px;
              height: 490px;
             }
-        .gallery: hover {
+        .gallery:hover {
                 border: 1px solid #777;
             }
         .gallery img {
