@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/output.css/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    
+    <style>
+        /* Custom CSS for forum post boxes */
+        .forum-post-box {
+            background-color: #f2f2f2; /* Light gray background color */
+            padding: 15px; /* Add some padding */
+            border-radius: 10px;
+            margin-bottom: 20px; /* Add margin bottom */
+        }
+        .forum-post-box .panel-title {
+            font-weight: bold; /* Make the title bold */
+        }
+        .reply-btn {
+            margin-top: 10px; /* Adjust margin to separate from other content */
+        }
+        .reply-form {
+            margin-top: 15px; /* Add margin to separate from other content */
+        }
+        .comment {
+            background-color: #e9ecef; /* Light gray background color */
+            padding: 10px; /* Add some padding */
+            margin-top: 10px; /* Adjust margin to separate comments */
+            margin-left: 20px; /* Indent comments to distinguish from posts */
+            border-radius: 10px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .post-meta {
+            margin-top: 5px;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+     <!--Navbar -->
+     <nav class="navbar navbar-expand-lg sticky-lg-top " style="background-color: #222222;" data-bs-theme="dark" style="position: relative;">
+        <div class="container-fluid ">
+            <img src="Img/YP_NoBG.png" width="42" height="25" alt="Logo">
+            <a class="navbar-brand text-white fw-bolder" style="padding-left:2px; padding-right: 4px;" href="index.html">YouthPower</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-0 " id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item p-1">
+                        <a class="nav-link text-white" aria-current="page" href="training.html">Training</a>
+                    </li>
+                    <li class="nav-item p-1 ">
+                        <a class="nav-link text-white" href="event.html">Event</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="nav-link text-white" href="forumn.html">Forum</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-end" id="navbarNav">
+                <ul class="nav ">
+                    <li class="nav-item m-1">
+                        <button type="button" class=" btn btn-dark rounded-pill bg-none border border-white" data-bs-toggle="modal" data-bs-target="#logModal" >
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>LogIn
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Nav Bar End------------------>
+
+    <div class="container">
+        <h2>Welcome to the Forum</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Forum Post Form -->
+                <form id="forum-post-form">
+                    <div class="form-group">
+                        <label for="post-title">Title:</label>
+                        <input type="text" class="form-control" id="post-title" name="post-title">
+                    </div>
+                    <div class="form-group">
+                        <label for="post-content">Content:</label>
+                        <textarea class="form-control" id="post-content" name="post-content" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </form>
+                <hr>
+
+
+                <!-- Forum Posts -->
+                <div id="forum-posts">
+                    <!-- Sample Forum Post -->
+                    <div class="panel panel-default forum-post-box">
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="avatar1.jpg" class="avatar" alt="User Avatar">
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="panel-title">How to learn programming?</h5>
+                                    <p class="card-text">I'm new to programming and want to learn. Can anyone suggest some good resources?</p>
+                                    <p class="post-meta">Posted by Shane Nickveen - 3 hours ago</p>
+                                </div>
+                            </div>
+                            <!-- Reply Button and Form -->
+                            <button class="btn btn-info reply-btn" data-toggle="collapse" data-target="#reply-form-1">Reply</button>
+                            <div id="reply-form-1" class="reply-form collapse">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="reply-content-1">Your Reply:</label>
+                                        <textarea class="form-control" id="reply-content-1" rows="3"></textarea>
+                                    </div>
+                                    <!-- Add Comment Button -->
+                                    <button type="submit" class="btn btn-primary">Submit Reply</button>
+                                </form>
+                            </div>
+                            <!-- Comments for "How to learn programming?" -->
+                            <div class="panel panel-default comment">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="avatar2.jpg" class="avatar" alt="User Avatar">
+                                        </div>
+                                        <div class="media-body">
+                                            <p><strong>Reply:</strong> There are various ways to learn programming. You can start with online courses like Codecademy or freeCodeCamp, or try tutorials on YouTube. Additionally, books like "Eloquent JavaScript" or "Python Crash Course" are great resources. Don't forget to practice regularly and work on projects to reinforce your learning!</p>
+                                            <p class="post-meta">Posted by Yong - 1 hour ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Another Sample Forum Post -->
+                    <div class="panel panel-default forum-post-box">
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="avatar3.jpg" class="avatar" alt="User Avatar">
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="panel-title">Discussion on What Is The Highest Paying Job?</h5>
+                                    <p class="card-text">Let's discuss the highest paying job and its pros and cons.</p>
+                                    <p class="post-meta">Posted by Izzatul - 1 day ago</p>
+                                </div>
+                            </div>
+                            <!-- Reply Button and Form -->
+                            <button class="btn btn-info reply-btn" data-toggle="collapse" data-target="#reply-form-2">Reply</button>
+                            <div id="reply-form-2" class="reply-form collapse">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="reply-content-2">Your Reply:</label>
+                                        <textarea class="form-control" id="reply-content-2" rows="3"></textarea>
+                                    </div>
+                                    <!-- Add Comment Button -->
+                                    <button type="submit" class="btn btn-primary">Submit Reply</button>
+                                </form>
+                            </div>
+                            <!-- Comments for "Discussion on What Is The Highest Paying Job?" -->
+                            <div class="panel panel-default comment">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="avatar4.jpg" class="avatar" alt="User Avatar">
+                                        </div>
+                                        <div class="media-body">
+                                            <p><strong>Reply:</strong> The highest paying job often depends on various factors such as location, industry, and level of experience. Some high-paying jobs include software engineering, medicine, and finance. However, it's essential to consider not only the salary but also factors like job satisfaction, work-life balance.</p>
+                                            <p class="post-meta">Posted by Ahmad - 3 days ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Another Sample Forum Post -->
+                    <div class="panel panel-default forum-post-box">
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="avatar5.jpg" class="avatar" alt="User Avatar">
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="panel-title">Best job for introverts.</h5>
+                                    <p class="card-text">I'm an introvert and I am curious on which job suits me. Can anyone suggest it to me? Thanks!</p>
+                                    <p class="post-meta">Posted by Idayu - 1 day ago</p>
+                                </div>
+                            </div>
+                            <!-- Reply Button and Form -->
+                            <button class="btn btn-info reply-btn" data-toggle="collapse" data-target="#reply-form-3">Reply</button>
+                            <div id="reply-form-3" class="reply-form collapse">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="reply-content-3">Your Reply:</label>
+                                        <textarea class="form-control" id="reply-content-3" rows="3"></textarea>
+                                    </div>
+                                    <!-- Add Comment Button -->
+                                    <button type="submit" class="btn btn-primary">Submit Reply</button>
+                                </form>
+                            </div>
+                            <!-- Comments for "Best job for introverts." -->
+                            <div class="panel panel-default comment">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="avatar6.jpg" class="avatar" alt="User Avatar">
+                                        </div>
+                                        <div class="media-body">
+                                            <p><strong>Reply:</strong> For introverts, jobs that involve independent work, minimal social interaction, and deep focus are often suitable. Consider roles like software developer, graphic designer, writer, or researcher. These careers allow you to work alone or in small groups, focusing on tasks that align with your strengths and interests.</p>
+                                            <p class="post-meta">Posted by Maria - 5 days ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Sidebar or additional content can be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
