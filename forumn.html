@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/output.css/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-rbs5rBoPZI+LiKNo2Qyv5i1D5OxkSTFkL4vMqVdPD9B80HLaQzZdFkscMz9O3gfs" crossorigin="anonymous"></script>
+
+
     <style>
         /* Custom CSS for forum post boxes */
         .forum-post-box {
@@ -27,32 +31,40 @@
 </head>
 <body>
     <!--Navbar -->
-    <nav class="navbar navbar-inverse" style="margin-bottom: 0%;">
-        <div class="container-fluid">
-            <div class="nav navbar-nav">
-                <div class="row" style="text-align: center;" href="index.html">
-                    <div class="col-xs-4 navbar-brand">
-                        <img src="Img\YP_NoBG.png" width="45" height="25" alt="Icon">
-                    </div>
-                    <div class="col-xs navbar-brand">
-                        <a href="index.html" class="text-white">YouthPower</a>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg sticky-lg-top " style="background-color: #222222;" data-bs-theme="dark" style="position: relative;">
+        <div class="container-fluid ">
+            <img src="Img/YP_NoBG.png" width="42" height="25" alt="Logo">
+            <a class="navbar-brand text-white fw-bolder" style="padding-left:2px; padding-right: 4px;" href="index.html">YouthPower</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-0 " id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item p-1">
+                        <a class="nav-link text-white" aria-current="page" href="training.html">Training</a>
+                    </li>
+                    <li class="nav-item p-1 ">
+                        <a class="nav-link text-white" href="event.html">Event</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="nav-link text-white" href="forumn.html">Forum</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav navbar-nav" style="padding-left:2%;">
-                <li class="#"><a href="training.html">Training</a></li>
-                <li class="#"><a href="event.html">Event</a></li>
-                <li class="active"><a href="forum.html">Forum</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
+            <div class="content-end" id="navbarNav">
+                <ul class="nav ">
+                    <li class="nav-item m-1">
+                        <button type="button" class=" btn btn-dark rounded-pill bg-none border border-white" data-bs-toggle="modal" data-bs-target="#logModal" >
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>LogIn
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <!--Nav Bar End -->
+    
+    <!--Nav Bar Tamat------------------>
 
-<<<<<<< HEAD
     <div class="container">
         <h2>Welcome to the Youth Power Forum</h2>
         <p class>Feel free to ask any questions here. We will try to help you!</p>
@@ -121,50 +133,6 @@
                             </form>
                         </div>
                     </div>
-=======
-        -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="ShaneCSS" href="css/output.css/">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-rbs5rBoPZI+LiKNo2Qyv5i1D5OxkSTFkL4vMqVdPD9B80HLaQzZdFkscMz9O3gfs" crossorigin="anonymous"></script>
-            
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    </head>
-
-    <body>
-
-        
-        <!--Navbar -->
-        <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #222222;" data-bs-theme="dark">
-            <div class="container-fluid ">
-                <img src="Img/YP_NoBG.png" width="42" height="25" alt="Logo">
-                <a class="navbar-brand text-white" style="padding-left:2px; padding-right: 4px;" href="index.html">YouthPower</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse p-0 " id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item p-1">
-                            <a class="nav-link text-white" aria-current="page" href="training.html">Training</a>
-                        </li>
-                        <li class="nav-item p-1 ">
-                            <a class="nav-link text-white" href="event.html">Event</a>
-                        </li>
-                        <li class="nav-item p-1">
-                            <a class="nav-link text-white fw-bolder" href="forumn.html">Forum</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="content-end" id="navbarNav">
-                    <ul class="nav ">
-                        <li class="nav-item m-1"><button type="button" class="btn btn-dark rounded-pill bg-none border border-white "><i class="fa fa-sign-in" aria-hidden="true"></i>
-                            LogIn</button>
-                        </li>
-                    </ul>
->>>>>>> 6059d64bdc10715d0fffc6a61f70ea096e5a2721
                 </div>
             </div>
             <div class="col-md-4">
@@ -172,6 +140,49 @@
             </div>
         </div>
     </div>
+
+    <footer class="bg-dark text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-2">
+            <!-- Facebook -->
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating mb-2"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fa fa-facebook"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating mb-2"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            
+            
+           
+            <button class="btn btn-info mb-2 border border-3 border-black" onclick="document.location='#'" >Join Us Now</button>
+            <button class="btn btn-warning mb-2 border border-3 border-black" onclick="document.location='MemberPlan.html'" >Be Premium</button>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+        
+        
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          ©2024 <i class="fw-bold">B</i>e <i class="fw-bold">B</i>right:
+          <a class=" text-white fw-bolder text-decoration-none " href="index.html">YouthPower</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

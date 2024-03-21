@@ -20,10 +20,11 @@
 
     <body>
   
+      <!--Navbar -->
       <nav class="navbar navbar-expand-lg sticky-lg-top " style="background-color: #222222;" data-bs-theme="dark" style="position: relative;">
         <div class="container-fluid ">
             <img src="Img/YP_NoBG.png" width="42" height="25" alt="Logo">
-            <a class="navbar-brand text-white fw-bolder" style="padding-left:2px; padding-right: 4px;" href="#">YouthPower</a>
+            <a class="navbar-brand text-white fw-bolder" style="padding-left:2px; padding-right: 4px;" href="index.html">YouthPower</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,19 +37,23 @@
                         <a class="nav-link text-white" href="event.html">Event</a>
                     </li>
                     <li class="nav-item p-1">
-                        <a class="nav-link text-white" href="forumn.html">Forumn</a>
+                        <a class="nav-link text-white" href="forumn.html">Forum</a>
                     </li>
                 </ul>
             </div>
             <div class="content-end" id="navbarNav">
                 <ul class="nav ">
-                    <li class="nav-item m-1"><button type="button" class="p-1 rounded-pill bg-none border border-white "><i class="fa fa-sign-in" aria-hidden="true"></i>
-                        LogIn</button>
+                    <li class="nav-item m-1">
+                        <button type="button" class=" btn btn-dark rounded-pill bg-none border border-white" data-bs-toggle="modal" data-bs-target="#logModal" >
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>LogIn
+                        </button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <!--Nav Bar Tamat------------------>
   
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">

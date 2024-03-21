@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-lg sticky-lg-top " style="background-color: #222222;" data-bs-theme="dark" style="position: relative;">
             <div class="container-fluid ">
                 <img src="Img/YP_NoBG.png" width="42" height="25" alt="Logo">
-                <a class="navbar-brand text-white fw-bolder" style="padding-left:2px; padding-right: 4px;" href="#">YouthPower</a>
+                <a class="navbar-brand text-white fw-bolder" style="padding-left:2px; padding-right: 4px;" href="index.html">YouthPower</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,8 +44,10 @@
                 </div>
                 <div class="content-end" id="navbarNav">
                     <ul class="nav ">
-                        <li class="nav-item m-1"><button type="button" class=" btn btn-dark rounded-pill bg-none border border-white "><i class="fa fa-sign-in" aria-hidden="true"></i>
-                            LogIn</button>
+                        <li class="nav-item m-1">
+                            <button type="button" class=" btn btn-dark rounded-pill bg-none border border-white" data-bs-toggle="modal" data-bs-target="#logModal" >
+                                <i class="fa fa-sign-in" aria-hidden="true"></i>LogIn
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -53,8 +55,120 @@
         </nav>
         
         <!--Nav Bar Tamat------------------>
+
+
         
-        <!-- Contain-->
+        <!--Modal-->  
+        <div class="modal fade" id="logModal" tabindex="-1" aria-labelledby="LoginUpModal" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen" >
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <section class="container-fluid">
+                            <div class="border rounded m-5 p-5 pt-4">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs " id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active text-muted" id="signin-tab" data-bs-toggle="tab" data-bs-target="#signin" type="button" role="tab" aria-controls="signin" aria-selected="true">Sign In</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link text-muted" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Sign Up</button>
+                                    </li>
+                                </ul>
+                
+                                <div class="tab-content" width="100%" id="myTabContent">
+                                    <!--Sign In Part-->
+                                    <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-6 text-center">
+                                                    <img src="https://images.unsplash.com/photo-1577937648823-e247fcb00267?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                                    alt="Accessories Image" width="60%" class="m-4" style="border-radius: 25px 80px; ">
+                                                </div>
+                                                <div class="col-6" style="margin-top: 4%;">
+                                                    <div class=" border rounded m-2 p-3 pt-0" >
+                                                        <div class="row align-items-center p-5" style="text-align: center;">
+                                                            <h3 class=""><strong>Log In</strong></h3>
+                                                            <div class="row mt-4">
+                                                                <label for="uname" class="col-2 col-form-label">Username</label>
+                                                                <input type="text" class="form-control border" id="uname" placeholder="Vsecret" style="width: 80%;">
+                                                            </div>
+                                                            <div class="row mt-4">
+                                                                <label for="password" class="col-2 col-form-label">Password</label>
+                                                                <input type="password" class="form-control border" id="password" placeholder="Password" style="width: 80%;">
+                                                            </div>
+                                                        </div>
+                                                        <button class=" mt-4 btn btn-light border" style="float: right; width: 20%;">Log In</button>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Sign Up Part-->
+                                    <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-5 text-center">
+                                                    <img src="https://images.unsplash.com/photo-1577937648823-e247fcb00267?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                                    alt="Accessories Image" width="60%" class="m-4" style="border-radius: 25px 80px; ">
+                                                </div>
+                                                <div class="col-7" style="margin-top: 4%;">
+                                                    <div class="border rounded m-2 p-3 pt-0">
+                                                        <div class="row align-items-center p-5" style="text-align: center;">
+                                                            <h3 class="align-middle"><strong>Sign Up</strong></h3>
+                                                            <div class="col-6">
+                                                                <div class="row mt-4">
+                                                                    <label for="fname" class="col-3 col-form-label">First Name</label>
+                                                                    <input type="text" class="form-control border" id="fname" placeholder="Victoria" style="width: 70%;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="row mt-4">
+                                                                    <label for="lname" class="col-3 col-form-label">Last Name</label>
+                                                                    <input type="text" class="form-control " id="lname" placeholder="Secret" style="width: 70%;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-4">
+                                                                <label for="uname" class="col-2 col-form-label">Username</label>
+                                                                <input type="text" class="form-control border" id="uname" placeholder="Vsecret" style="width: 80%;">
+                                                            </div>
+                                                            <div class="row mt-4">
+                                                                <label for="email" class="col-2 col-form-label">Email</label>
+                                                                <input type="text" class="form-control border" id="email" placeholder="vsecret82@gmail.com" style="width: 80%;">
+                                                            </div>
+                                                            <div class="row mt-4">
+                                                                <label for="password" class="col-2 col-form-label">Password</label>
+                                                                <input type="password" class="form-control border" id="password" placeholder="Password" style="width: 80%;">
+                                                            </div>
+                                                        </div>
+                                                        <button class=" mt-4 btn btn-light border" style="float: right; width: 20%;">Sign Up</button>
+                
+                    
+                                                    </div>
+                                                </div>
+                    
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>                  
+                
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-bs-dismiss="modal">Close <i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal End-->
+
+
+        
+        <!-- Content-->
         <div class="flex row align-items-center" style="background-color: rgb;"><!--On Top [Search Bar sty in the middle]-->
             <div class="container col-10">
                 <form action="" class="d-flex m-4 mb-1 mt-2 ">
@@ -66,9 +180,7 @@
         </div>
         <!--Done Search Bar-->
 
-        <!--Content-->
-
-
+        <!--Isi"nya-->
         
         <div class=" container-fluid flex row">
             <!--Kiri - Category-->
@@ -80,13 +192,6 @@
                         <button class="btn btn-outline-dark content-center m-4 rounded-pill border-0">Reading Hub</button>
                         <button class="btn btn-outline-dark content-center m-4 rounded-pill border-0">Educational Update</button>
                         <button class="btn btn-outline-dark content-center m-4 rounded-pill border-0">Youtube Sugeestion Video</button>
-                        <!--
-    
-                            <form action="" class="d-flex m-4 ">
-                                <input type="search" class="form-control me-1 rounded-5" placeholder="Search" aria-label="Search" disabled="true">
-                                <button class=" bg-white rounded-5 " disabled="true"><i class="fa fa-search"></i></button>
-                            </form>
-                        -->
                         <div class="row align-items-center m-3">
                             <div class="col">
                                 <div class="card text-center">
@@ -291,67 +396,46 @@
                 </section>
             </div>
         </div>
-        
+        <!--
+
+            <iframe src="https://chatbot.hellotars.com/conv/NJba4f/" style="width: 400px;height: 620px;box-shadow: 0 20px 80px rgba(0,0,0,.6);border-radius: 5px;overflow: hidden;border: none;"></iframe>
+        -->
 
         <footer class="bg-dark text-center">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
               <!-- Section: Social media -->
-              <section class="mb-4">
+              <section class="mb-2">
                 <!-- Facebook -->
                 <a
                 data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
+                  class="btn text-white btn-floating mb-2"
                   style="background-color: #3b5998;"
                   href="#!"
                   role="button"
                   ><i class="fa fa-facebook"></i
                 ></a>
           
-                <!-- Twitter -->
-                <a
-                  data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #55acee;"
-                  href="#!"
-                  role="button"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-        
-          
                 <!-- Instagram -->
                 <a
                   data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
+                  class="btn text-white btn-floating mb-2"
                   style="background-color: #ac2bac;"
                   href="#!"
                   role="button"
                   ><i class="fa fa-instagram"></i
                 ></a>
-          
-                <!-- Linkedin -->
-                <a
-                  data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #0082ca;"
-                  href="#!"
-                  role="button"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-                <!-- Github -->
-                <a
-                  data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #333333;"
-                  href="#!"
-                  role="button"
-                  ><i class="fa fa-github"></i
-                ></a>
+                
+                
+               
+                <button class="btn btn-info mb-2 border border-3 border-black" onclick="document.location='#'" >Join Us Now</button>
+                <button class="btn btn-warning mb-2 border border-3 border-black" onclick="document.location='MemberPlan.html'" >Be Premium</button>
               </section>
               <!-- Section: Social media -->
             </div>
             <!-- Grid container -->
-          <button class="btn btn-light m-1" onclick="document.location='#'" >Join Us Now</button>
+            
+            
             <!-- Copyright -->
             <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.05);">
               ©2024 <i class="fw-bold">B</i>e <i class="fw-bold">B</i>right:
